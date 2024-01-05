@@ -24,9 +24,3 @@ function slideOut() {
 function navigate() {
   window.location.href = "projects.html";
 }
-
-// document.querySelector("#project_2").addEventListener("animationend", moveAnimation);
-
-// function moveAnimation() {
-//   document.querySelector("#project_2").classList.add("move");
-// }

@@ -1,13 +1,64 @@
-.ball {
-  animation: rotate 5s linear infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg) translate(10px) rotate(0deg);
+@media (min-width: 800px) {
+  .rotate {
+    animation: rotate 5s linear infinite;
   }
-  100% {
-    transform: rotate(360deg) translate(10px) rotate(-360deg);
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate(10px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(10px) rotate(-360deg);
+    }
+  }
+
+  .rotate2 {
+    animation: rotate2 5s linear infinite;
+  }
+
+  @keyframes rotate2 {
+    0% {
+      transform: rotate(0deg) translate(10px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg) translate(10px) rotate(360deg);
+    }
+  }
+  .move {
+    animation: fade_in 3s linear 1, move_kf 5s linear infinite;
+    transition: 0.5s ease-in-out;
+  }
+
+  .move2 {
+    animation: fade_in 3s linear 1, move2_kf 5s linear infinite;
+    transition: 0.5s ease-in-out;
+  }
+
+  @keyframes fade_in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes move_kf {
+    0% {
+      transform: rotate(0deg) translate(5px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(5px) rotate(-360deg);
+    }
+  }
+
+  @keyframes move2_kf {
+    0% {
+      transform: rotate(0deg) translate(5px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg) translate(5px) rotate(360deg);
+    }
   }
 }
 
@@ -72,7 +123,13 @@
 }
 
 .fade_in {
-  animation: fade_in 3s linear 1, move_kf 5s linear infinite;
+  animation: fade_in 3s linear 1;
+  transition: 0.5s ease-in-out;
+}
+
+.fade_in2 {
+  animation: fade_in 3s linear 1;
+  transition: 0.5s ease-in-out;
 }
 
 @keyframes fade_in {
@@ -81,27 +138,5 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes move_kf {
-  0% {
-    transform: rotate(0deg) translate(5px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(5px) rotate(-360deg);
-  }
-}
-
-.fade_in2 {
-  animation: fade_in 3s linear 1, move2_kf 5s linear infinite;
-}
-
-@keyframes move2_kf {
-  0% {
-    transform: rotate(0deg) translate(5px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg) translate(5px) rotate(360deg);
   }
 }

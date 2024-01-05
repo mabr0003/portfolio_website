@@ -10,6 +10,24 @@ img {
   display: block;
 }
 
+.window_container {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+iframe {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 800px;
+  margin-top: -68px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
 }
@@ -29,6 +47,38 @@ header nav ul a {
   text-decoration: none;
   font-size: 20px;
   color: #b5b8ac;
+  font-family: "Copperplate", sans-serif;
+}
+
+h1 {
+  font-family: "Copperplate", sans-serif;
+  padding: 5rem 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Copperplate", sans-serif;
+  color: #242424;
+  font-size: 20px;
+}
+
+p {
+  max-width: 65ch;
+}
+
+section {
+  padding: 2rem;
+}
+
+section img {
+  margin-bottom: 1rem;
+}
+
+section h2,
+section p {
+  margin-bottom: 2rem;
 }
 
 #logo_header {
@@ -43,16 +93,11 @@ header nav ul a {
   background-image: url(svg/logo.svg);
   aspect-ratio: 306.3949/251.9327;
   background-size: cover;
-  width: 350px;
+  width: 250px;
   margin: auto;
   margin-top: 10rem;
   position: relative;
   transition: 1s;
-}
-
-#forside:hover {
-  scale: 105%;
-  cursor: pointer;
 }
 
 .ball {
@@ -88,8 +133,24 @@ header nav ul a {
   left: 106%;
 }
 
+@media (min-width: 800px) {
+  #forside:hover {
+    scale: 105%;
+    cursor: pointer;
+  }
+
+  #forside {
+    width: 350px;
+  }
+}
+
 /* ------------ PROJECTS ----------- */
 
+.grid_1-1-1-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #project_2 {
   width: 200px;
   height: 200px;
@@ -125,4 +186,67 @@ header nav ul a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fade_in {
+  transition: 0.2s ease-in-out;
+}
+
+.fade_in2 {
+  transition: 0.2s ease-in-out;
+}
+
+#web_02 {
+  background-color: #bccbd0;
+  margin-top: 10rem;
+  display: grid;
+}
+
+#ux_03 {
+  background-color: #e4d6a4;
+}
+
+#animation_04 {
+  background-color: #b5b8ac;
+}
+
+#indhold_05 {
+  background-color: #d6c6c1;
+}
+
+@media (min-width: 800px) {
+  .fade_in:hover,
+  .fade_in2:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+
+  .grid_2-1-2 > img {
+    transition: 0.5s ease-in-out;
+  }
+  .grid_2-1-2 > img:hover {
+    scale: 120%;
+    z-index: 1;
+  }
+
+  .grid_1-1-1-1_image > img {
+    transition: 0.5s ease-in-out;
+  }
+  .grid_1-1-1-1_image > img:hover {
+    scale: 120%;
+    z-index: 1;
+  }
+  .grid_1-1-1-1_image_reverse > img {
+    transition: 0.5s ease-in-out;
+  }
+  .grid_1-1-1-1_image_reverse > img:hover {
+    scale: 120%;
+    z-index: 1;
+  }
+}
+
+/*-----------ABOUT------------*/
+
+#about {
+  background-color: #e4d6a4;
 }

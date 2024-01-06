@@ -25,12 +25,12 @@
     }
   }
   .move {
-    animation: fade_in 3s linear 1, move_kf 5s linear infinite;
+    animation: move_kf 5s linear infinite, fade_in 3s linear 1;
     transition: 0.5s ease-in-out;
   }
 
   .move2 {
-    animation: fade_in 3s linear 1, move2_kf 5s linear infinite;
+    animation: move2_kf 5s linear infinite, fade_in 3s linear 1;
     transition: 0.5s ease-in-out;
   }
 
@@ -119,24 +119,5 @@
 @keyframes fade {
   100% {
     opacity: 0;
-  }
-}
-
-.fade_in {
-  animation: fade_in 3s linear 1;
-  transition: 0.5s ease-in-out;
-}
-
-.fade_in2 {
-  animation: fade_in 3s linear 1;
-  transition: 0.5s ease-in-out;
-}
-
-@keyframes fade_in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }

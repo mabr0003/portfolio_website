@@ -52,20 +52,26 @@ header nav ul a {
 
 h1 {
   font-family: "Copperplate", sans-serif;
-  padding: 5rem 2rem;
   font-size: 2rem;
-  text-align: center;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
 a {
   text-decoration: none;
   font-family: "Copperplate", sans-serif;
   color: #242424;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 p {
   max-width: 65ch;
+  font-family: "Lato", sans-serif;
+  line-height: 35px;
+  font-size: 20px;
 }
 
 section {
@@ -81,12 +87,13 @@ section p {
   margin-bottom: 2rem;
 }
 
-#logo_header {
+.logo_header {
   display: block;
   background-image: url(svg/logo.svg);
   background-size: cover;
   aspect-ratio: 306.3949/251.9327;
   width: 70px;
+  border-radius: 50%;
 }
 
 #forside {
@@ -98,6 +105,7 @@ section p {
   margin-top: 10rem;
   position: relative;
   transition: 1s;
+  border-radius: 50%;
 }
 
 .ball {
@@ -145,6 +153,38 @@ section p {
 }
 
 /* ------------ PROJECTS ----------- */
+
+.title {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  font-size: 20px;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+#btn_2 {
+  background-color: #e4d6a4;
+}
+#btn_3 {
+  background-color: #bccbd0;
+}
+#btn_4 {
+  background-color: #e4d6a4;
+}
+#btn_5 {
+  background-color: #b5b8ac;
+}
+
+#btn_6 {
+  background-color: #e4d6a4;
+}
 
 .grid_1-1-1-1 {
   display: flex;
@@ -221,6 +261,10 @@ section p {
     scale: 1.1;
   }
 
+  .btn:hover {
+    scale: 105%;
+  }
+
   .grid_2-1-2 > img {
     transition: 0.5s ease-in-out;
   }
@@ -242,6 +286,41 @@ section p {
   .grid_1-1-1-1_image_reverse > img:hover {
     scale: 120%;
     z-index: 1;
+  }
+
+  body {
+    padding: 2rem;
+  }
+  .txt_box {
+    background-color: white;
+    padding: 2rem;
+    max-width: 600px;
+    border-radius: 50%;
+  }
+
+  #studiestart {
+    background-color: #dfecf047;
+  }
+
+  #ux_ui {
+    background-color: #e6dec4a1;
+  }
+  #dokumentation {
+    background-color: #e6dec4a1;
+  }
+
+  #design_spil {
+    background-color: #cbcec185;
+  }
+  #time_attack {
+    background-color: #cbcec185;
+  }
+
+  #mediaprod {
+    background-color: #e4d7d392;
+  }
+  #videosite_redesign {
+    background-color: #e4d7d392;
   }
 }
 

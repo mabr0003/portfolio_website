@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="animation.css">
@@ -16,7 +19,7 @@
         <nav>
 
             <ul>
-                <li><a href="index.html" id="logo_header"> </a></li>
+                <li><a href="index.html" class="logo_header"> </a></li>
                 <li><a href="projects.html">Projekter</a></li>
                 <li><a href="about.html">Om mig</a></li>
             </ul>
@@ -26,55 +29,58 @@
         <div class="grid_1-1-1-1" id="project_balls">
 
             <a id="project_2" class="fade_in move" href="#web_02">
-                <h2>Tema 02</h2>
+                Tema 02
             </a>
 
 
-            <a id="project_3" class="fade_in2 move2" href="#ux_03">
-                <h2>Tema 03</h2>
+            <a id="project_3" class="fade_in move2" href="#ux_03">
+                Tema 03
             </a>
 
 
             <a id="project_4" class="fade_in move" href="#animation_04">
-                <h2>Tema 04</h2>
+                Tema 04
             </a>
 
 
-            <a id="project_5" class="fade_in2 move2" href="#indhold_05">
-                <h2>Tema 05</h2>
+            <a id="project_5" class="fade_in move2" href="#indhold_05">
+                Tema 05
             </a>
         </div>
 
         <section id="web_02">
 
-            <div>
+            <div class="title">
                 <h1>Tema 02 - Grundlæggende web</h1>
+                <a class="btn" id="btn_2" href="https://odoricobrumfield.dk/kea/02_web/01_website/website/">Se sitet</a>
             </div>
+
             <div class="grid_2-1-2">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
+                <img src="imgs/02_webcomputere.webp" alt="dummy">
+                <img src="imgs/02_webflex.webp" alt="dummy">
+                <img src="imgs/02_webforside.webp" alt="dummy">
             </div>
-            <div id="studiestart">
+            <div id="studiestart" class="txt_box">
                 <h2>Studiestartsprøve</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
+                <p>I tema 2 har vi lært om multimediedesignerens rolle i erhvervet samt erhvervets anvendte udvekslings
+                    og- filformater
+                    såsom Figma jpg, png, webp mm. og vi har lært om designprincipper og konventioner. Indenfor kode har
+                    vi lært HTML og
+                    CSS, og har lært om grids, flex og media queries. Vi har også arbejdet med værktøjer til
+                    billedbehandling.
+
+                    Til studiestartsprøven har jeg designet og kodet et responsivt website på basis af udleveret tekst,
+                    billeder og
+                    wireframes. Jeg har til en vis grad anvendt designprincipper og konventioner, men var ikke herrer
+                    over særlig meget
+                    andet end farvevalg og font.
+
                 </p>
             </div>
             <div class="grid_1-1-1-1_image">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
+                <img src="imgs/02_webgrid.webp" alt="dummy">
+                <img src="imgs/02_webpage.webp" alt="dummy">
+
             </div>
 
 
@@ -83,42 +89,39 @@
         <section id="ux_03">
 
 
-            <div>
+            <div class="title">
                 <h1>Tema 03 - Grundlæggende UX/UI</h1>
+                <a class="btn" id="btn_3" href="https://odoricobrumfield.dk/kea/03_ux/01_kodet_site/">Se sitet</a>
             </div>
             <div class=" grid_1-1-1-1_image_reverse">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
+                <img src="imgs/03_wireframe.webp" alt="dummy">
+                <img src="imgs/03_styletile.webp" alt="dummy">
+                <img src="imgs/03_research.webp " alt="dummy">
             </div>
-            <div id="presentation">
-                <h2>Præsentation</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
+            <div id="ux_ui" class="txt_box">
+                <h2>UX/UI</h2>
+                <p>I tema 3 har vi lært om brugeroplevelser, prototyping, usability og testing. Vi har lært at anvende
+                    værktøjer og metoder
+                    til designprocesser blandt andet research, inspirationssøgning, ideudvikling, sketching, moodboard,
+                    wireframing, og
+                    styletile.
                 </p>
             </div>
             <div class="grid_2-1-2">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
+                <img src="imgs/03_kost.webp" alt="dummy">
+                <img src="imgs/03_training.webp" alt="dummy">
+                <img src="imgs/03_bodyguide.webp " alt="dummy">
             </div>
 
-            <div id="dokumentation">
+            <div id="dokumentation" class="txt_box">
                 <h2>Dokumentation</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
+                <p>Jeg har udviklet et site i html, css og javascript ud fra en digital prototype, som jeg har lavet
+                    diverse test på såsom
+                    tænke højt test og 5 sek test.
+                    Under forløbet har vi skulle dokumentere vores proces, da et af læringsmålene var at kunne formidle
+                    udviklingsprocesser
+                    og løsninger til samarbejdspartnere. Dertil har jeg lavet en procesdokumentation og en præsentation
+                    af processen.
                 </p>
             </div>
 
@@ -128,43 +131,39 @@
         <section id="animation_04">
 
 
-            <div>
+            <div class="title">
                 <h1>Tema 04 - Animation</h1>
+                <a class="btn" id="btn_4" href="https://odoricobrumfield.dk/kea/04_animation/website/">Se sitet</a>
             </div>
             <div class="grid_2-1-2" id="animation_imagegrid_1">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
+                <img src="imgs/04_timeattack.webp" alt="dummy">
+                <img src="imgs/04_ui.webp" alt="dummy">
+                <img src="imgs/04_knapper.webp" alt="dummy">
             </div>
-            <div id="blabla">
-                <h2>blabla</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
+            <div id="design_spil" class="txt_box">
+                <h2>Design af spil</h2>
+                <p>I tema 4 har vi lært om formgivnings-og kompositionsprincipper i forbindelse med design af UI og
+                    spil-elementer, og
+                    skitserings- og ide-genereringsteknikker. Vi har lært om frontend-teknologier til dette såsom
+                    Illustrator. Vi har lært
+                    om udvikling af CSS-animationer og Javascript herunder funktioner, variabler og events.
                 </p>
             </div>
             <div class="grid_1-1-1-1_image" id="animation_imagegrid_2">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
+                <img src="imgs/04_failed.webp" alt="dummy">
+                <img src="imgs/04_gamescreen.webp" alt="dummy">
+                <img src="imgs/04_success.webp" alt="dummy">
             </div>
 
-            <div id="blablabla">
-                <h2>blablabla</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
+            <div id="time_attack" class="txt_box">
+                <h2>Time Attack</h2>
+                <p>Ved brug af Illustrator har jeg udviklet og designet spil-elementer til mit eget spil. Jeg har selv
+                    udarbejdet konceptet
+                    til spillet, og har ved brug af CSS, Javascript og State Machine diagram lavet animationer til
+                    spillet, og programmeret
+                    spillet.
                 </p>
+                <p>Prøv spillet herunder.</p>
             </div>
             <div class="window_container">
                 <iframe src="https://odoricobrumfield.dk/kea/04_animation/website/spil.html"></iframe>
@@ -178,42 +177,48 @@
         <section id="indhold_05">
 
 
-            <div>
+            <div class="title">
                 <h1>Tema 05 - Grundlæggende Indhold</h1>
+                <div><a class="btn" id="btn_5" href="https://mabr0003.github.io/videosite/index.html">Se
+                        videosite</a>
+                    <a class="btn" id="btn_6" href="https://odoricobrumfield.dk/kea/05_indhold/05.02_aria/">Se
+                        virksomhedssite</a>
+                </div>
+
             </div>
             <div class="grid_1-1-1-1_image" id="indhold_image_grid_1">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
+                <img src="imgs/05_mavi.webp" alt="dummy">
+                <img src="imgs/indspil.webp " alt="dummy">
+                <img src=" imgs/05_mavi2.webp " alt="dummy">
             </div>
-            <div id="lorem">
-                <h2>blabla</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
+            <div id="mediaprod" class="txt_box">
+                <h2>Medieproduktion</h2>
+                <p>I tema 5 har vi lært om digital medieproduktion samt brugeroplevelsen med dette, hvortil vi har lært
+                    at teste brugeres
+                    opfattelse af et design. Vi har lært om diverse teknologier og udstyr til bland andet
+                    videooptagelser og redigering, og
+                    har hertil arbejdet med Adobe Premier Pro.
+                    Vi har lært at arbejde sammen i en gruppe, og at have kontakt til en virksomhed om et stykke
+                    arbejde.
+
                 </p>
             </div>
             <div class="grid_2-1-2" id="indhold_image_grid_2">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
-                <img src="dummy/dummy-image.webp" alt="dummy">
+                <img src="imgs/05_setup.webp" alt="dummy">
+                <img src="imgs/05_principper.webp" alt="dummy">
+                <img src="imgs/05_aria.webp" alt="dummy">
             </div>
 
-            <div id="ipsum">
-                <h2>blablabla</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima placeat aliquid in,
-                    nihil sequi, ratione accusantium autem laborum aperiam a asperiores? Quaerat maiores harum,
-                    nobis
-                    pariatur temporibus delectus deleniti?
+            <div id="videosite_redesign" class="txt_box">
+                <h2>Videosite og redesign</h2>
+                <p>Jeg har været med til at optage og redigere en video om en persons passion, som blev lagt op på et
+                    videosite.
+                    Jeg har sammen med min gruppe lavet et redesign af et website. Her var jeg med til at lave relevant
+                    research, indsamling
+                    af materiale til sitets indhold (herunder optagelser af video og fotografering), udvikling af
+                    designproces og så har jeg
+                    haft til opgave at kode sitet.
+
                 </p>
             </div>
 
@@ -221,7 +226,9 @@
 
 
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
     <script src="script.js"></script>
 </body>
 

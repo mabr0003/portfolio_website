@@ -24,3 +24,19 @@ function slideOut() {
 function navigate() {
   window.location.href = "projects.html";
 }
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 30) {
+    document.querySelector("#scroll_to_top").style.display = "block";
+  } else {
+    document.querySelector("#scroll_to_top").style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.documentElement.scrollTop = 0;
+}

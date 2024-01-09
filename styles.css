@@ -193,7 +193,7 @@ footer h2 {
 #btn_4 {
   background-color: #e4d6a4;
 }
-#btn_5 {
+.btn_5 {
   background-color: #b5b8ac;
 }
 
@@ -201,6 +201,9 @@ footer h2 {
   background-color: #e4d6a4;
 }
 
+#btn_7 {
+  background-color: #d6c6c1;
+}
 .grid_1-1-1-1 {
   display: flex;
   flex-direction: column;
